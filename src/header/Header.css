@@ -1,0 +1,128 @@
+.container {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+    top: 0;
+    align-items: center;
+
+}
+
+.container-logo{
+    color: #ffffff;
+}
+
+nav {
+    display: none;
+}
+
+.burger-btn{
+    display: block;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
+
+
+
+  .menu {
+    display: none; /* Menu oculto por padrão */
+    position: absolute;
+    top: 50px; /* Espaço para que o menu apareça abaixo do ícone */
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    transition: max-height 0.3s ease-in-out; /* Animação de deslizamento */
+    max-height: 0; /* Menu começa com altura 0 (oculto) */
+    overflow: hidden;
+  }
+  
+  .menu.open {
+    display: block; /* Exibe o menu quando o estado isMenuOpen é true */
+    max-height: 500px; /* Aumenta a altura para mostrar o conteúdo */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    margin: 15px 0;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu ul li a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+@media only screen and (min-width: 601px){
+    .container{
+        border: 1px solid red;
+    }
+
+    .container-nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .nav-web {
+        display: block;
+        align-self: center;
+    }
+
+    .burger-btn{
+        display: none;
+    }
+    
+    .selected {
+        color: #D3E97A;
+        font-weight: 900;
+    }
+}
+
