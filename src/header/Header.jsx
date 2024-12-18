@@ -5,21 +5,22 @@ import "./Header.css";
 function Header() {
 
   const [isChanged, setIsChanged] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   const menuRef = useRef(null);
   const iconRef = useRef(null);
 
   const handleClick = () => {
+
     setIsChanged(!isChanged);
-    setIsMenuOpen(!isMenuOpen);
+    
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       // Se o clique for fora do ícone de menu e do menu
       if (menuRef.current && !menuRef.current.contains(event.target) && !iconRef.current.contains(event.target)) {
-        setIsMenuOpen(false);
+
         setIsChanged(false); // Reverte o ícone de volta para a posição original
       }
     };
@@ -27,7 +28,7 @@ function Header() {
     // Adiciona o evento de clique
     document.addEventListener('mousedown', handleClickOutside);
 
-    // Limpeza do event listener ao desmontar o componente
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -47,10 +48,18 @@ function Header() {
 
 
 
-      <div className={`menu ${isMenuOpen ? 'open' : ''}`} ref={menuRef}>
+      <div className={`menu ${isChanged ? 'open' : ''}`} ref={menuRef}>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+          <li>
+            <NavLink to={"/home"} className={({ isActive }) => (isActive ? "selected" : "")} onClick={handleClick}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={"/sobre"} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleClick}>
+              Sobre
+            </NavLink>
+          </li>
         </ul>
       </div>
 
@@ -72,18 +81,12 @@ function Header() {
       <nav className="nav-web">
         <ul className="container-nav">
           <li>
-            <NavLink
-              to={"/home"}
-              className={({ isActive }) => (isActive ? "selected" : "")}
-            >
+            <NavLink to={"/home"} className={({ isActive }) => (isActive ? "selected" : "")}>
               Home
             </NavLink>
           </li>      
           <li>
-            <NavLink
-              to={"/sobre"}
-              className={({ isActive }) => isActive ? "selected" : ""}
-            >
+            <NavLink to={"/sobre"} className={({ isActive }) => isActive ? "selected" : ""}>
               Sobre
             </NavLink>
           </li>

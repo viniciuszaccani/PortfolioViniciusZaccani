@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -10,20 +10,68 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 37px;
+    font-size: 55px;
     text-transform: uppercase;
-                             margin-top: 100px;
+    line-height: 100%;
+    margin-bottom: 10px;
+
   }
   p{
-    color: gray;
+    color: #C7C7C7;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    font-size: 16px;
   }
 
+
+
+
+.container-homepage{
+                  margin-top: 140px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.container-btn{
+  margin-top: 40px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.container-btn a{
+  width: 50px;
+  height: 50px;
+  background-color: #222222;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn {
-    background-color:  #D3E97A;
-    padding: 10px;
-    border-radius: 50px;
+  background-color:  #D3E97A;
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 0;
+  height: 50px;
+}
+.btn p{
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.homepage-image{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }

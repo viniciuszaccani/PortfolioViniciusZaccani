@@ -2,7 +2,7 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
     width: 100%;
     max-width: 1440px;
     padding-left: 10%;
@@ -49,21 +49,20 @@ nav {
 
 
   .menu {
-    display: none; /* Menu oculto por padrão */
     position: absolute;
-    top: 50px; /* Espaço para que o menu apareça abaixo do ícone */
+    top: 70px; /* Espaço para que o menu apareça abaixo do ícone */
     left: 0;
     background-color: #333;
     width: 100%;
     box-sizing: border-box;
-    transition: max-height 0.3s ease-in-out; /* Animação de deslizamento */
-    max-height: 0; /* Menu começa com altura 0 (oculto) */
+    transition: max-height 0.4s ease-in-out;
+    max-height: 0; 
     overflow: hidden;
+    padding-left: 10px;
   }
   
   .menu.open {
-    display: block; /* Exibe o menu quando o estado isMenuOpen é true */
-    max-height: 500px; /* Aumenta a altura para mostrar o conteúdo */
+    max-height: 500px; 
   }
   
   .menu ul {
@@ -73,13 +72,15 @@ nav {
   }
   
   .menu ul li {
-    margin: 15px 0;
+    margin: 25px 0;
   }
   
   .menu ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 15px 0;
+    padding-right: 90%;
   }
   
   .menu ul li a:hover {
@@ -89,12 +90,13 @@ nav {
 
 
 
-
-
-
 @media only screen and (min-width: 601px){
     .container{
         border: 1px solid red;
+    }
+    .menu.open{
+      max-height: 0;
+      transition: max-height 0s ease-in-out;
     }
 
     .container-nav {
