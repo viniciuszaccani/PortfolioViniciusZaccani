@@ -56,24 +56,17 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/sobre"} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleClick}>
+            <NavLink to={"/about"} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleClick}>
               Sobre
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={"/contact"} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleClick}>
+              Contato
             </NavLink>
           </li>
         </ul>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -86,8 +79,13 @@ function Header() {
             </NavLink>
           </li>      
           <li>
-            <NavLink to={"/sobre"} className={({ isActive }) => isActive ? "selected" : ""}>
+            <NavLink to={"/about"} className={({ isActive }) => isActive ? "selected" : ""}>
               Sobre
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={"/contact"} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleClick}>
+              Contato
             </NavLink>
           </li>
         </ul>
