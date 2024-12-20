@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import React, { useState, useRef, useEffect } from 'react';
 import "./Header.css";
+import Logo from '../assets/Logo.jpg';
 
+var img = Logo
 function Header() {
 
   const [isChanged, setIsChanged] = useState(false);
@@ -37,7 +39,12 @@ function Header() {
   return (
     <div>
     <header className="container">
-      <div className="container-logo">LOGO</div>
+      <div className="container-logo">
+        <img src={Logo} alt=" Capivara com chapéu de mago, imagem gerada por IA"/>
+        
+        <span>Vinicius Zaccani</span>
+        
+        </div>
 
       <div className={`burger-btn ${isChanged ? 'change' : ''}`} onClick={handleClick}  ref={iconRef}>
         <div className={`bar1 ${isChanged ? 'change' : ''}`}></div>
