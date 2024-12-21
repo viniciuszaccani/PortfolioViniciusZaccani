@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import './style.css'
 import capivara from "../../assets/capivara_iMac.png"
+import Experience from "./experience";
+import Skills from "./Skills";
 
 function HomePage() {
     const navigation = useNavigate()
@@ -8,16 +10,16 @@ function HomePage() {
     function navegar() {
         navigation("/sobre")
     }
-// passei o container-page para a div acima. Verificar se isso não quebrará nada
+
     return (
         <div className="container-page">
-            <div > 
-                <div className="homepage-content">
+            <div className="homepage-content"> 
+                <div >
                     <h1>Hi, i am <br />Vinicius Zaccani</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sunt aliquam eius vel blanditiis! Nesciunt quo mollitia vel tempora facilis nam. Accusamus explicabo quasi corporis laborum impedit autem magni exercitationem.</p>
                     <div className="container-btn">
                         
-                        <button class="btn">
+                        <button className="btn">
                             <p>Contact me</p>
                             <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" ><path d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM4.049 9h8.559l-2.266-2.265 1.414-1.414 4.735 4.733-4.735 4.734-1.414-1.414L12.718 11H4.049z" /></svg>
@@ -42,18 +44,14 @@ function HomePage() {
 
 
             <hr />
-
-            <div className="experience-content">
-                <div>
-                    <h1>My Experience</h1>
-                </div>
-
-                <div>
+            
+            <Experience/>
 
 
-                </div>
+            <hr />
 
-            </div>
+            <Skills/>
+            
         </div>
 
 

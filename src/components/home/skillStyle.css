@@ -1,0 +1,28 @@
+.skills-content{
+    margin: 64px 0px;
+}
+
+.skills-content h2{
+    margin-bottom: 12px;
+}
+
+.skills-list{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.skill-item{
+    border: 1px solid #484848;
+    border-radius: 100px;
+    width: fit-content;
+    padding: 16px 24px;
+}
+
+.skill-item span{
+    color: #FFFFFF;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}

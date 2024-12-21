@@ -5,7 +5,6 @@ function ContactPage() {
         <div className="container-page">
             <div>
                 <h1>Entre em<br/> contato comigo</h1>
-                <br />
                 <p>Me mande um email <a href="mailto:vinicius.zaccani@gmail.com" className='border'>vinicius.zaccani@gmail.com</a> </p>
                 <br /><p>Para mais informações, veja meu <a href="" className='border'>curriculo</a> </p>
 
