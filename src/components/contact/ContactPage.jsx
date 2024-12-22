@@ -1,10 +1,17 @@
 import './contactStyle.css'
 
+/*<h1>Entre em<br/> contato comigo</h1>
+<p>Me mande um email <a href="mailto:vinicius.zaccani@gmail.com" className='border'>vinicius.zaccani@gmail.com</a> </p>
+<br />
+<p>Para mais informações, veja meu <a href="" className='border'>curriculo</a> </p>
+
+*/
+
 function ContactPage() {
     return (
-        <div className="container-page">
-            <div>
-                <h1>Entre em<br/> contato comigo</h1>
+        <div className="container-projects">
+            <div className='projects-infos'>
+                <h1>Entre em<br/> contato</h1> 
                 <p>Me mande um email <a href="mailto:vinicius.zaccani@gmail.com" className='border'>vinicius.zaccani@gmail.com</a> </p>
                 <br /><p>Para mais informações, veja meu <a href="" className='border'>curriculo</a> </p>
 
@@ -28,9 +35,7 @@ function ContactPage() {
 
 
             </div>
-
-            <div>
-                
+    
                 <form action="" className="form">
                     <label for="name">Nome</label>
                     <input type="text" id="name" name="name" required/>
@@ -47,8 +52,6 @@ function ContactPage() {
                     <button type="submit" >Submit</button>
                 </form>
             </div>
-            
-        </div>
     
     );
 }

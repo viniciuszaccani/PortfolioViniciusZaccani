@@ -104,10 +104,21 @@ nav {
 
 
 
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 700px){
     .container{
-        
+        height: 94px;
     }
+
+    .container-logo{
+      gap: 15px;
+      font-size: 32px;
+    }
+
+    .container-logo img{
+      width: 60px;
+      height: 60px;
+    }
+
     .menu.open{
       max-height: 0;
       transition: max-height 0s ease-in-out;
@@ -142,3 +153,17 @@ nav {
     }
 }
 
+@media only screen and (min-width: 800px){
+  .container{
+    padding: 0 60px;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}

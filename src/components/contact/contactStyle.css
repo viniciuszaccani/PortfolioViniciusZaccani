@@ -1,8 +1,15 @@
+.container-projects{
+    width: 100%;
+    padding: 0 15px;
+}
+
 .form{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     margin-bottom: 100px;
+    width: 100%;
+
 }
 
 .form label{
@@ -45,7 +52,7 @@
 }
 
 .form button{
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: #D3E97A;
     font-family: "Manrope", sans-serif;
     text-transform: uppercase;
@@ -69,4 +76,64 @@
 .btn-contact{
     background-color: black !important;
     margin-right: 10px;
+}
+
+@media only screen and (min-width: 700px){
+    .container-projects{
+        padding: 0px 30px;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px){
+    .container-projects{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 60px;
+      gap: 20px;
+    }
+    
+
+
+    .form{
+        margin-top: 0px;
+        max-width: 400px;
+    }
+
+    
+
+    .form label{
+        font-size: 18px;
+    }
+    .form input{
+        height: 51px;
+    }
+
+    .form textarea{
+        font-size: 18px;
+        height: 150px;
+    }
+    .projects-infos{
+        margin-top: 24px;
+    }
+    
+    .container-btn{
+        gap: 20px;
+    }
+
+    .btn-contact svg{
+        width: 40px;
+        height: 40px;
+    }
+  }
+
+
+  @media only screen and (min-width: 1200px){
+
+    .form{
+        max-width: 600px;
+    }
+    
+
 }
