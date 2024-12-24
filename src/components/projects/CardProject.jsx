@@ -37,17 +37,3 @@ function CardProject({data}){
 }
 
 export default CardProject;
-
-/*
-id: 2,
-        name: 'projeto',
-        description: 'descrição',
-        year: 'teste',
-        tools:['teste1', 'teste2'],
-        image:{
-            src: 'img',
-            alt:'teste'
-        },
-        githubLink: 'link',
-        previewLink: 'link',
-*/

@@ -6,8 +6,8 @@ let projectsList = data;
 function ProjectsPage(){
 
     return(
-        <div className="container-page">
-            <div className='margin-bottom65'>
+        <div className="container-main-projects">
+            <div className='title-projects'>
                 <h1>Projetos</h1>
                 <p>Aqui estão alguns dos projetos que eu criei e que mostram minha paixão pelo desenvolvimento.</p>
             </div>
