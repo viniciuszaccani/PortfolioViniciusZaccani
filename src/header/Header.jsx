@@ -37,7 +37,6 @@ function Header() {
   }, []);
     
   return (
-    <div>
     <header className="container">
       <div className="container-logo">
         <img src={Logo} alt=" Capivara com chapéu de mago, imagem gerada por IA"/>
@@ -109,7 +108,6 @@ function Header() {
         </ul>
       </nav>
     </header>
-    </div>
   );
 }
 

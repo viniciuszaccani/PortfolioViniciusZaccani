@@ -1,34 +1,68 @@
 .experiences-content{
-    margin: 64px 0;
-  }
-  .experiences-content h2{
-    margin-bottom: 32px;
-  }
+  margin: 64px 0;
+}
+
+.experiences-content h2{
+  margin-bottom: 32px;
+}
   
+.experience-cards{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: white;
+  margin-bottom: 40px;
+  font-family: "Manrope", sans-serif;
+  gap: 5px;
+  max-width: 500px;
+}
+
+.experience-cards div{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
   
-  .experience-cards{
+}
+  
+.experience-title{
+  font-size: 18px;  
+}
+  
+.experience-company{
+  margin-bottom: 10px;
+  color: #D3E97A;
+  font-weight: bold;
+}
+
+
+@media only screen and (min-width: 992px){
+  .experiences-content{
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    color: white;
-    margin-bottom: 40px;
-    font-family: "Manrope", sans-serif;
-    gap: 5px;
+    justify-content: space-between;
+    margin: 80px 0;
   }
-  .experience-cards div{
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  
-  }
-  
+
   .experience-title{
-    font-size: 18px;
-    
+    font-size: 24px;
   }
-  
+
   .experience-company{
-    margin-bottom: 10px;
-    color: #D3E97A;
-    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
   }
+
+}
+
+@media only screen and (min-width: 1200px){
+  .experience-cards div{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .experience-cards{
+    max-width: 600px;
+  }
+
+
+}

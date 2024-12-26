@@ -8,8 +8,8 @@ function Skills() {
     return(
         <div className='skills-content'>
             <h2>My Skills</h2>
-            <div>
-                <p>Estou sempre em busca de adquirir novas habilidades e aprimorar as que já possuo.</p>
+            <div className='items-content'>
+                <p>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor.</p>
                 <div className='skills-list'>
                     {skillList.map((skill, index) => {
                         return(
@@ -27,3 +27,6 @@ function Skills() {
 }
 
 export default Skills;
+
+/*                <p>Estou sempre em busca de adquirir novas habilidades e aprimorar as que já possuo.</p>
+*/

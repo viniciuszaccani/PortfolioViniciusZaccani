@@ -1,6 +1,6 @@
 .container-main-projects{
     width: 100%;
-    padding: 0px 10px;
+    padding: 0px 15px;
 }
 
 .title-projects{
@@ -94,6 +94,7 @@
 
     .container-main-projects{
         padding: 0px 60px;
+        margin-top: 24px;
     }
 
     .title-projects{
@@ -117,6 +118,8 @@
         align-items: center;
         margin-bottom: 0px;
         padding: 0px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .project-image{
@@ -155,8 +158,6 @@
         width: 600px;
         height: 600px;
         padding: 50px;
-        margin-left: 0;
-        margin-right: 0;
         max-width: 600px;
     }
     .project-image{
@@ -186,7 +187,7 @@
     }
 
     .container-main-projects{
-        padding: 0px 100px;
+        padding: 0px 80px;
     }
 
 }

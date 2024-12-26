@@ -4,11 +4,11 @@ export const data = [
         icon: ''
     },
     {
-        name: 'Javascript',
+        name: 'CSS',
         icon: ''
     },
     {
-        name: 'teste',
+        name: 'Javascript',
         icon: ''
     },
     {
@@ -16,27 +16,31 @@ export const data = [
         icon: ''
     },
     {
-        name: 'HTML5',
+        name: 'Aws',
         icon: ''
     },
     {
-        name: 'HTML5',
+        name: 'Node.js',
         icon: ''
     },
     {
-        name: 'HTML5',
+        name: 'Git',
         icon: ''
     },
     {
-        name: 'HTML5',
+        name: 'GitHub',
         icon: ''
     },
     {
-        name: 'HTML5',
+        name: 'Terraform',
         icon: ''
     },
     {
-        name: 'HTML5',
+        name: 'Docker',
         icon: ''
     },
+    {
+        name: 'SQL',
+        icon: ''
+    }
 ]

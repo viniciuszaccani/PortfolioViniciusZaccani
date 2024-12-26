@@ -8,8 +8,7 @@
 
 body{
   background-color: #000000;
-              margin-top: 140px;
-
+  margin-top: 120px;
 }
 
 
@@ -64,6 +63,7 @@ p{
 
 }
 
+
 @media only screen and (min-width: 700px){
   h1{
     font-size: 80px;
@@ -73,6 +73,17 @@ p{
   p{
     font-size: 18px;
   }
+
+  .container-page{
+    padding: 0 30px;
+   }
+
+
+   h2{
+
+    font-size: 60px;
+  }
+
 
 }
 
@@ -86,5 +97,29 @@ p{
   .margin-bottom65{
     margin-bottom: 80px;
   }
+
+  .container-page{
+   padding: 0 60px;
+  }
+
+  h2{
+    font-size: 70px;
+    width: 440px;
+  }
   
+}
+
+  body{
+    overflow-y: scroll;
+  }
+
+@media only screen and (min-width: 1200px){
+  .container-page{
+    padding: 0 80px;
+   }
+
+   h2{
+    font-size: 76px;
+  }
+
 }

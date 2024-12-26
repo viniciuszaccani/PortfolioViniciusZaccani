@@ -134,6 +134,9 @@
     .form{
         max-width: 600px;
     }
-    
+
+    .container-projects{
+        padding: 0px 80px;
+    }
 
 }

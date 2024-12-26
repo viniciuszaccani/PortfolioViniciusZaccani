@@ -14,9 +14,9 @@ function HomePage() {
     return (
         <div className="container-page">
             <div className="homepage-content"> 
-                <div >
+                <div className="homepage-title">
                     <h1>Hi, i am <br />Vinicius Zaccani</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sunt aliquam eius vel blanditiis! Nesciunt quo mollitia vel tempora facilis nam. Accusamus explicabo quasi corporis laborum impedit autem magni exercitationem.</p>
+                    <p>A Sydney based front-end developer passionate about building accessible and user friendly websites.</p>
                     <div className="container-btn">
                         
                         <button className="btn">
@@ -34,7 +34,7 @@ function HomePage() {
                     </div>
                 </div>
                 <div className="homepage-image">
-                    <img width="250px" height="250px" src={capivara} alt="Desenho de uma capivara usando computador, gerado por IA"/>
+                    <img id="main-image" src={capivara} alt="Desenho de uma capivara usando computador, gerado por IA"/>
                 </div> 
             </div>
 
