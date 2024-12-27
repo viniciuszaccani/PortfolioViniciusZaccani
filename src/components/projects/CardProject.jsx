@@ -4,22 +4,21 @@ import arrowTopCorner from "../../assets/arrowTopCorner.svg"
 
 function CardProject({data}){
 
-
     return(
         <div className='project-container'>
-            <div className='project-img'>
-                <img className='project-image' src="https://picsum.photos/200" alt={data.alt} />
+            <div className='project-img'> 
+                <img src={data.image.src} alt={data.alt} className='project-image'/>
             </div>
             <div className='project-content'>
                 <h3>{data.name}</h3>
                 <p>{data.description}</p>
 
                 <div className='project-info'>
-                    <p>Project Info</p>
+                    <p>Informações do projeto</p>
                 </div>
                 
                 <div className='project-info'>
-                    <span>year</span>
+                    <span>Ano</span>
                     <span className='gray'>{data.year}</span>
                 </div>
                 <div className='project-info'>
@@ -29,7 +28,7 @@ function CardProject({data}){
 
                 <div className='project-links'>
                     <a target="_blank" href={data.previewLink}>Live Demo  <img src={arrowTopCorner} alt="" /></a>
-                    <a target="_blank" href={data.githubLink}>See on github <img src={github} alt="" /> </a>
+                    <a target="_blank" href={data.githubLink}>Veja no Github <img src={github} alt="" /> </a>
                 </div>
             </div>
         </div>

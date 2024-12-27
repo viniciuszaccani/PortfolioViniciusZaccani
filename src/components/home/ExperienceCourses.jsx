@@ -1,12 +1,12 @@
-import {data} from './experiencesList.js'
+import {data} from './courses.js'
 import "./experienceStyle.css"
 
-const xp = [...data].reverse();
+const xp = data;
 
 function Experience() {
     return(
         <div className='experiences-content'>
-            <h2>Experiência</h2>
+            <h2>Formações</h2>
             <div>
                 {xp.map(experiences => {
                     return(
