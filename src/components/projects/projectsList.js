@@ -14,7 +14,7 @@ export const  data = [
             alt:'Pagina com um relógio e zona do seu fuso horario'
         },
         githubLink: 'https://github.com/viniciuszaccani/TimeZoneNow',
-        previewLink: 'link',
+        previewLink: 'https://viniciuszaccani.github.io/TimeZoneNow/',
     },
     {
         id: 2,
@@ -27,7 +27,7 @@ export const  data = [
             alt:'Layout da pagina, similar a uma calculadora'
         },
         githubLink: 'https://github.com/viniciuszaccani/tip-calculator-app',
-        previewLink: 'https://github.com/viniciuszaccani',
+        previewLink: 'https://viniciuszaccani.github.io/tip-calculator-app/',
     }
 ]
 

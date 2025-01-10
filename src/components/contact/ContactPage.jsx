@@ -1,4 +1,5 @@
 import './contactStyle.css'
+import { useState } from 'react'
 import curriculo from '../../assets/curriculo.pdf'
 
 /*<h1>Entre em<br/> contato comigo</h1>
@@ -9,6 +10,39 @@ import curriculo from '../../assets/curriculo.pdf'
 */
 
 function ContactPage() {
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    function submit(e){
+        e.preventDefault()
+        setIsSubmitting(true);
+
+        const formElements = document.querySelector("form")
+        console.log('teste de envio de formulario')
+        const formData = new FormData(formElements)
+        const currentDate = new Date();
+        formData.append('DataHora', currentDate.toLocaleString('pt-BR', { hour12: false }));
+        console.log(currentDate.toLocaleString('pt-BR', { hour12: false }))
+
+        fetch("https://script.google.com/macros/s/AKfycbwKRYbvOm5Sf6WGFVIj1IPU9CNrAmrgb7x-7PWpXfVfNxcVXXLVM5tW8LK0gOeTzYjF/exec", {
+            method:"POST",
+            body: formData
+        }).then((res)=>res.json())
+        .then((data)=>{
+            window.alert(' Mensagem enviada com sucesso!\n\n Em breve entrarei em contato com você.')
+            formElements.reset();
+        }).catch((error) => {
+            console.error("Erro ao enviar o formulário:", error);
+            window.alert("Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde.");
+        })
+        .finally(() => {
+            setIsSubmitting(false);
+        });
+
+
+    }
+
+
     return (
         <div className="container-projects">
             <div className='projects-infos'>
@@ -37,20 +71,22 @@ function ContactPage() {
 
             </div>
     
-                <form action="" className="form">
+                <form className="form" onSubmit={(e)=>submit(e)}>
                     <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required/>
+                    <input type="text" id="name" name="Nome" required/>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required/>
+                    <input type="email" id="email" name="Email" required/>
 
                     <label for="subject">Assunto</label>
-                    <input type="text" id="subject" name="subject" required/>
+                    <input type="text" id="subject" name="Assunto" required/>
 
                     <label for="message">Mensagem</label>
-                    <textarea name="message" id="message" required></textarea>
+                    <textarea name="Mensagem" id="message" required></textarea>
 
-                    <button type="submit" >Submit</button>
+                    <button type="submit" disabled={isSubmitting}>
+                        {isSubmitting ? "Enviando..." : "Enviar"}
+                    </button>
                 </form>
             </div>
     
