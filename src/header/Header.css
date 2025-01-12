@@ -137,6 +137,10 @@ nav {
         text-decoration: none;
         color: #ffffff;
     }
+
+    li a:hover{
+      border-bottom: 1px solid #D3E97A;
+    }
     
     .nav-web {
         display: block;
