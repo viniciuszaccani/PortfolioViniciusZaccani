@@ -82,7 +82,7 @@ function Header() {
       <nav className="nav-web">
         <ul className="container-nav">
           <li>
-            <NavLink to={"/home"} className={({ isActive }) => (isActive ? "selected" : "")}>
+            <NavLink to={"/home"} className={({ isActive }) => (isActive || window.location.pathname === "/" ? "selected" : "")}>
               Home
             </NavLink>
           </li>      
