@@ -10,9 +10,17 @@ export const data = [
     {   
         id: 2,
         title: 'Analista de infraestrutura',
-        company: ' Cadastra Marketing Digital',
+        company: 'Cadastra Marketing Digital',
         startDate: 'Março 2021',
         endDate: 'Outubro 2023',
         description: 'Responsável pela manutenção do ambiente AWS, gestão do inventário de equipamentos e implementação de sistemas internos. Utilizei Scrum, Docker, Terraform, Git e Linux, além de gerenciar acessos e políticas de segurança.'
+    },
+    {   
+        id: 3,
+        title: 'Desenvolvedor FullStack',
+        company: 'AgromAI',
+        startDate: 'Março 2025',
+        endDate: 'Junho 2025',
+        description: 'Desenvolvimento full stack de aplicações web responsivas, com foco em acessibilidade, integração de sistemas e criação de APIs utilizando React, TypeScript, Tailwind e Python.'
     }
 ]

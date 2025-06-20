@@ -8,7 +8,15 @@ export const data = [
         icon: ''
     },
     {
+        name: 'Tailwind',
+        icon: ''
+    },
+    {
         name: 'Javascript',
+        icon: ''
+    },
+    {
+        name: 'TypeScript',
         icon: ''
     },
     {

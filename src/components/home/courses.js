@@ -9,6 +9,14 @@ export const data = [
     },
     {   
         id: 2,
+        title: "CS50W: Web Programming with Python and JavaScript",
+        company: 'Universidade Harvard',
+        startDate: '',
+        endDate: '',
+        description: 'Curso avançado de programação web com foco em desenvolvimento full stack utilizando Python, JavaScript, SQL, HTML, CSS, Django e conceitos de segurança e escalabilidade.'
+    },
+    {   
+        id: 3,
         title: 'Curso de Inglês',
         company: 'TopWay English School',
         startDate: 'Julho 2019',
