@@ -27,8 +27,12 @@ function CardProject({data}){
                 </div>
 
                 <div className='project-links'>
-                    <a target="_blank" href={data.previewLink}>Live Demo  <img src={arrowTopCorner} alt="" /></a>
-                    <a target="_blank" href={data.githubLink}>Veja no Github <img src={github} alt="" /> </a>
+                    <a target="_blank" href={data.previewLink}>Ver Página <img src={arrowTopCorner} alt="" /></a>
+                    {data.githubLink !== '' && (
+                        <a target="_blank" href={data.githubLink}>
+                        Veja no Github <img src={github} alt="" />
+                        </a>
+                    )}
                 </div>
             </div>
         </div>
