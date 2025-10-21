@@ -10,7 +10,7 @@ export const  data = [
         id: 1,
         name: 'Revestimentos VYNT',
         description: 'Site desenvolvido para uma empresa de revestimentos. O projeto foi construído em WordPress utilizando Elementor.',
-        year: '2024',
+        year: '2025',
         tools:['WordPress', 'Elementor'],
         image:{
             src: VyntPage,
